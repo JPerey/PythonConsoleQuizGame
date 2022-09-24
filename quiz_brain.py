@@ -18,7 +18,7 @@ class QuizBrain:
         self.question_number += 1
 
     def check_answer(self, player_answer, question_answer, current_number):
-        if player_answer == question_answer:
+        if player_answer.lower() == question_answer.lower():
             self.score += 1
             print(f"correct! current score: {self.score}/{current_number}")
         else:
